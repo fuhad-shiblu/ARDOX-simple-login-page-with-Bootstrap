@@ -90,13 +90,17 @@ ul , ol{
 }
 .inputForm form input{
     width: 100%;
-    border: none;
+    border: 1px solid #fff;
     outline: none;
     border-radius: 8px;
     padding: 18px 0 17px 27px;
     font-size: 22px;
     font-weight: 600;
     color: #000;
+    transition: all linear .1s;
+}
+.inputForm form input:hover{
+    border: 1px solid #000;
 }
 .inputForm form input::placeholder{
     font-size: 22px;
@@ -116,6 +120,10 @@ ul , ol{
     display: flex;
     justify-content: end;
     margin-top: 9px;
+    transition: all linear .1s;
+}
+.inputForm form a:active{
+    opacity: 0.5;
 }
 .inputForm form button{
     width: 100%;
@@ -129,6 +137,13 @@ ul , ol{
     border: none;
     outline: none;
     margin-top: 47px;
+    transition: all linear .1s;
+}
+.inputForm form button:hover{
+    transform: scale(1.1);
+}
+.inputForm form button:active{
+    transform: scale(0.9);
 }
 .inputForm form .fuhadShiblu_orConWith{
     text-align: center;
@@ -169,6 +184,12 @@ ul , ol{
     background: #000;
     border-radius: 10px;
     padding: 11px 30px;
+}
+.fuhadShiblu_otherBtns a:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_otherBtns a:active{
+    transform: scale(1.2);
 }
 .fuhadShiblu_otherBtns a img{
     width: 30px;
