@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*===== Common CSS Part Start =====*/
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul , ol{
+    list-style: none;
+}
+:root{
+    --Roboto: "Roboto", sans-serif;
+    --Inter: "Inter", sans-serif;
+}
+/*===== Common CSS Part End =====*/
+
+/*===== Navbar CSS Part Start =====*/
+#fuhadShiblu_loginPageMain{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg_light.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 34px;
+}
+.fuhadShiblu_btns a{
+    width: 81px;
+    height: 39px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    transition: all linear .1s;
+}
+.fuhadShiblu_btns{
+    display: flex;
+    gap: 32px;
+    justify-content: end;
+}
+.fuhadShiblu_btns a::after{
+    content: '';
+    width: 23px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+.fuhadShiblu_btns a:hover{
+    background: #000;
+    color: #fff;
+}
+/*===== Navbar CSS Part End =====*/
+
+/*===== botForm CSS Part Start =====*/
+.botImg{
+    width: 587px;
+    height: 770px;
+    margin-top: 181px;
+}
+.inputForm{
+    display: flex;
+    justify-content: end;
+    margin-top: 169px;
+}
+.inputForm form{
+    width: 373px;
+}
+.inputForm form h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #000;
+    text-align: center;
+}
+.inputForm form h1 span{
+    display: block;
+}
+.inputForm form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 18px 0 17px 27px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+.inputForm form input::placeholder{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: var(--Roboto);
+    color: #9A9A9A;
+}
+.inputForm form .mailInput{
+    margin-top: 58px;
+    margin-bottom: 22px;
+}
+.inputForm form a{
+    font-size: 18px;
+    font-weight: 200;
+    font-family: var(--Roboto);
+    color: #000;
+    display: flex;
+    justify-content: end;
+    margin-top: 9px;
+}
+.inputForm form button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: var(--Roboto);
+    color: #fff;
+    background: #050505;
+    padding: 17px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-top: 47px;
+}
+.inputForm form .fuhadShiblu_orConWith{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Inter);
+    color: #000;
+    margin-top: 36px;
+    position: relative;
+}
+.inputForm form .fuhadShiblu_orConWith::before{
+    content: '';
+    width: 101px;
+    height: 1px;
+    position: absolute;
+    background: #000;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.inputForm form .fuhadShiblu_orConWith::after{
+    content: '';
+    width: 101px;
+    height: 1px;
+    position: absolute;
+    background: #000;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.fuhadShiblu_otherBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42px;
+}
+.fuhadShiblu_otherBtns a{
+    background: #000;
+    border-radius: 10px;
+    padding: 11px 30px;
+}
+.fuhadShiblu_otherBtns a img{
+    width: 30px;
+    height: 30px;
+}
+.fuhadShiblu_newAccnt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 52px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    font-family: var(--Roboto);
+}
+.fuhadShiblu_newAccnt a{
+    color: #020202 !important;
+    font-weight: 900 !important;
+}
+/*===== botForm CSS Part End =====*/
+footer{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 100;
+}
+footer .fa-heart{
+    color: rgb(255, 0, 0);
+}
+footer a{
+    color: #000;
+    font-weight: 900;
+}
+footer a:hover{
+    text-decoration: underline;
+}
